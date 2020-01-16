@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".SV.TLCauHoi">
+
+  <RelativeLayout
+      android:padding="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <TextView
+          android:padding="5dp"
+          android:background="@drawable/boder_white"
+          android:id="@+id/tv_count_time"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="00:00"
+          android:textColor="#000"
+          android:textSize="20dp"></TextView>
+      <TextView
+          android:layout_alignParentRight="true"
+          android:padding="5dp"
+          android:background="@drawable/boder_white"
+          android:id="@+id/tvv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="Nộp Bài"
+          android:textColor="#000"
+          android:textSize="20dp"></TextView>
+  </RelativeLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        app:tabMode="scrollable"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>

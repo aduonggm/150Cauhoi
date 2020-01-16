@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:id="@+id/fragment_contener"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_dialog_question"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="#000"></TextView>
+
+
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/img_dialog"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            ></ImageView>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_dialog_cauhoi1"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:layout_width="0dp"
+                android:layout_weight="8"
+                android:layout_height="wrap_content"></TextView>
+
+
+        <CheckBox
+            android:buttonTint="@color/colorAccent"
+            android:clickable="false"
+            android:layout_marginLeft="3dp"
+            android:layout_gravity="center"
+            android:id="@+id/cb_dia_1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"></CheckBox>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_dia_cauhoi2"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:layout_width="0dp"
+                android:layout_weight="8"
+                android:layout_height="wrap_content"></TextView>
+
+        <CheckBox
+            android:buttonTint="@color/colorAccent"
+
+            android:clickable="false"
+            android:layout_marginLeft="3dp"
+            android:layout_gravity="center"
+            android:id="@+id/cb_dia_2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"></CheckBox>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ln_dl_3"
+
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_dia_cauhoi3"
+
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:layout_width="0dp"
+                android:layout_weight="8"
+                android:layout_height="wrap_content"></TextView>
+
+
+        <CheckBox
+            android:clickable="false"
+            android:layout_marginLeft="3dp"
+            android:layout_gravity="center"
+            android:id="@+id/cb_dia_3"
+            android:layout_weight="1"
+            android:buttonTint="@color/colorAccent"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"></CheckBox>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ln_dl_4"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_dia_cauhoi4"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:layout_width="0dp"
+                android:layout_weight="8"
+                android:layout_height="wrap_content"></TextView>
+
+
+        <CheckBox
+            android:visibility="visible"
+            android:backgroundTint="#000"
+            android:layout_marginLeft="3dp"
+            android:layout_gravity="center"
+            android:id="@+id/cb_dia_4"
+            android:clickable="false"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:buttonTint="@color/colorAccent"
+            android:layout_height="match_parent"></CheckBox>
+    </LinearLayout>
+
+
+    <TextView
+
+        android:layout_marginTop="15dp"
+        android:textSize="18dp"
+        android:textColor="#55F329"
+        android:text="123"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_dia_chuthich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+<LinearLayout
+    android:layout_marginTop="15dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/border_tv"
+        android:padding="5dp"
+        android:textColor="#25E02C"
+        android:layout_weight="1"
+        android:text="Đúng"
+        android:textSize="18dp"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/border_tv"
+        android:padding="5dp"
+        android:textColor="#D51103"
+        android:layout_weight="1"
+        android:text="Sai"
+        android:textSize="18dp"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/border_tv"
+        android:padding="5dp"
+        android:textColor="#F0D90D"
+        android:layout_weight="1"
+        android:text="Thiếu"
+        android:textSize="18dp"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"></TextView>
+
+</LinearLayout>
+
+</LinearLayout>

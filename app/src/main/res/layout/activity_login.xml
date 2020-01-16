@@ -1,0 +1,81 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_centerInParent="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/ic_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="UserName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/edt_user_name"
+            android:maxLines="1"
+
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="PassWord">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/edt_pass_word"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/cb_remember"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember Me"></CheckBox>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_login"
+        android:background="@drawable/confirm_button_bg"
+        android:layout_marginTop="20dp"
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"></Button>
+    <Button
+        android:background="@drawable/confirm_button_bg"
+        android:id="@+id/btn_signup"
+        android:layout_marginTop="10dp"
+        android:text="sign up"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"></Button>
+
+</LinearLayout>
+    <ProgressBar
+        android:id="@+id/prog_login"
+        android:layout_centerInParent="true"
+        android:progressDrawable="@drawable/progress"
+        android:layout_width="80dp"
+        android:layout_height="80dp"></ProgressBar>
+</RelativeLayout>
