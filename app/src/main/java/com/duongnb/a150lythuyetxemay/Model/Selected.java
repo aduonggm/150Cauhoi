@@ -85,7 +85,7 @@ public class Selected {
         if ((str.contains("3") && !isTraloi3()) || (!str.contains("3") && isTraloi3())) {
             return false;
         }
-        if ((!str.contains("4") || isTraloi4()) && (str.contains("4") || !isTraloi4())) {
+        if ((!str.contains("4") && isTraloi4()) || (str.contains("4") && !isTraloi4())) {
             return false;
         }
         return false;
