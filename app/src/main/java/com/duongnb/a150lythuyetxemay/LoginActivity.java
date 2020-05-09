@@ -12,13 +12,6 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.android.volley.AuthFailureError;
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 import com.duongnb.a150lythuyetxemay.Base.KeepLogin;
 import com.duongnb.a150lythuyetxemay.GV.ListQuestion;
 import com.duongnb.a150lythuyetxemay.Network.API;
@@ -71,7 +64,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (edtPassWord.getText().toString().isEmpty()
                 || edtUsserName.getText().toString().isEmpty()){
-                    Toast.makeText(LoginActivity.this, "Không để trống Tài Khaorn Mật Khẩu", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Không để trống Tài Khoản Mật Khẩu", Toast.LENGTH_SHORT).show();
                 }else{
                     progressBar.setVisibility(View.VISIBLE);
                     Request();}
@@ -85,9 +78,9 @@ public class LoginActivity extends AppCompatActivity {
         RetrofitClient.getCilent().create(API.class).login(userName,passWord).enqueue(new Callback<Integer>() {
             @Override
             public void onResponse(Call<Integer> call, retrofit2.Response<Integer> response) {
-                if (response.equals("0")){
+                if (response.body()== 0){
                     Toast.makeText(LoginActivity.this, "Sai Tài Khoản Hoặc Mật Khẩu", Toast.LENGTH_SHORT).show();
-                    progressBar.setVisibility(View.GONE);
+
                 }else {
                     Toast.makeText(LoginActivity.this, "Đăng Nhập Thành Công", Toast.LENGTH_SHORT).show();
                     if (checkBox.isChecked()){
@@ -98,17 +91,16 @@ public class LoginActivity extends AppCompatActivity {
                         KeepLogin.setUser(0,getApplicationContext());
                     }
                         if (Integer.parseInt(response.body().toString())==1){
-                            progressBar.setVisibility(View.GONE);
                             Intent intent = new Intent(getApplicationContext(), ListQuestion.class);
                             startActivity(intent);
                             finish();
                         }else {
-                            progressBar.setVisibility(View.GONE);
                             Intent intent = new Intent(getApplicationContext(), Tesst.class);
                             startActivity(intent);
                             finish();
                         }
                 }
+                progressBar.setVisibility(View.GONE);
             }
 
             @Override

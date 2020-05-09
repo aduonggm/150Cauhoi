@@ -38,6 +38,6 @@ public interface API {
                         @Field("cauTL4") String CauTL4,
                         @Field("chuThich") String ChuThich,
                         @Field("dapAn") String DapAn,
-                        @Field("Image") String base64
+                        @Field("Image") String image
                         );
 }

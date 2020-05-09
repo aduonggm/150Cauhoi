@@ -232,34 +232,7 @@ public class AddQuestion extends AppCompatActivity {
                 Toast.makeText(AddQuestion.this, " Upload  Ảnh không thành công", Toast.LENGTH_SHORT).show();
             }
         });
-//        String url = "http://lolautochess.tk/newApp/addImage.php";
-//         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
-//        StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new com.android.volley.Response.Listener<String>() {
-//            @Override
-//            public void onResponse(String response) {
-//                Toast.makeText(AddQuestion.this, response.toString(), Toast.LENGTH_SHORT).show();
-//
-//            }
-//        }, new com.android.volley.Response.ErrorListener() {
-//            @Override
-//            public void onErrorResponse(VolleyError error) {
-//
-//            }
-//        }){
-//            @Override
-//            protected Map<String, String> getParams() throws AuthFailureError {
-//
-//                Map<String, String> params = new HashMap<>();
-//
-//                params.put("img",ImgUrl);
-//                params.put("name",nameImg);
-//
-//
-//                return params;
-//
-//            }
-//        };
-//        requestQueue.add(stringRequest);
+
 
     }
 
